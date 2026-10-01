@@ -1,0 +1,11 @@
+# Règles yamllint du dépôt de conf
+extends: default
+
+rules:
+  # Le "---" en début de fichier n'est pas utilisé dans ce dépôt
+  document-start: disable
+  # "on:" est la clé standard des workflows GitHub Actions
+  truthy:
+    allowed-values: ["true", "false", "on"]
+  line-length:
+    max: 120

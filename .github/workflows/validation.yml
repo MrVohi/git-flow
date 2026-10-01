@@ -1,0 +1,19 @@
+name: Validation de la conf
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Linter les fichiers YAML
+        run: yamllint docker-compose.yml .github/workflows/
+
+      - name: Valider docker-compose.yml
+        run: docker compose config --quiet
