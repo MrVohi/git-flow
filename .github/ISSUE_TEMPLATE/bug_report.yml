@@ -1,24 +1,45 @@
-<!--- Provide a general summary of the issue in the Title above -->
+name: Bug Report
+description: File a bug report
+labels: [bug]
+body:
+  - type: textarea
+    id: context
+    label: Context
+    description: Anything that could help us understand what is happening. Include your environment.
+    validations:
+      required: true
 
-## Context
-<!--- Anything that could help us understand what is happening. Preffered to include your environment -->
+  - type: textarea
+    id: expected
+    label: Expected behavior
+    description: What should have happened.
+    validations:
+      required: true
 
-## Expected behavior
-<!--- What should have happened -->
+  - type: textarea
+    id: current
+    label: Current behavior
+    description: What is happening.
+    validations:
+      required: true
 
-## Current behavior
-<!-- What is happening -->
+  - type: textarea
+    id: steps
+    label: Steps to reproduce
+    placeholder: |
+      1.
+      2.
+      3.
+      4.
+      5.
+    validations:
+      required: true
 
-## Steps to reproduce
-<!-- How can we reach the same state as you -->
+  - type: textarea
+    id: logs
+    label: Logs
+    description: If you have access to logs, please add them.
 
-1.
-2.
-3.
-4.
-5.
-
-## Logs
-<!-- If you have access to logs, please add them -->
-
-## Additional comments
+  - type: textarea
+    id: comments
+    label: Additional comments
