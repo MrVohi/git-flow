@@ -4,42 +4,48 @@ labels: [bug]
 body:
   - type: textarea
     id: context
-    label: Context
-    description: Anything that could help us understand what is happening. Include your environment.
+    attributes:
+      label: Context
+      description: Anything that could help us understand what is happening. Include your environment.
     validations:
       required: true
 
   - type: textarea
     id: expected
-    label: Expected behavior
-    description: What should have happened.
+    attributes:
+      label: Expected behavior
+      description: What should have happened.
     validations:
       required: true
 
   - type: textarea
     id: current
-    label: Current behavior
-    description: What is happening.
+    attributes:
+      label: Current behavior
+      description: What is happening.
     validations:
       required: true
 
   - type: textarea
     id: steps
-    label: Steps to reproduce
-    placeholder: |
-      1.
-      2.
-      3.
-      4.
-      5.
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+        4.
+        5.
     validations:
       required: true
 
   - type: textarea
     id: logs
-    label: Logs
-    description: If you have access to logs, please add them.
+    attributes:
+      label: Logs
+      description: If you have access to logs, please add them.
 
   - type: textarea
     id: comments
-    label: Additional comments
+    attributes:
+      label: Additional comments

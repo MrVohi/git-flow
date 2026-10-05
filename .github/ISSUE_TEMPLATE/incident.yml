@@ -4,34 +4,39 @@ labels: [incident]
 body:
   - type: dropdown
     id: severity
-    label: Severity
-    options:
-      - P1 - Critical
-      - P2 - High
-      - P3 - Medium
+    attributes:
+      label: Severity
+      options:
+        - P1 - Critical
+        - P2 - High
+        - P3 - Medium
     validations:
       required: true
 
   - type: textarea
     id: summary
-    label: Summary
-    description: Brief description of the incident.
+    attributes:
+      label: Summary
+      description: Brief description of the incident.
     validations:
       required: true
 
   - type: textarea
     id: impact
-    label: Impact
-    description: What services or users are affected.
+    attributes:
+      label: Impact
+      description: What services or users are affected.
     validations:
       required: true
 
   - type: textarea
     id: timeline
-    label: Timeline
-    description: When did it start and what actions were taken.
+    attributes:
+      label: Timeline
+      description: When did it start and what actions were taken.
 
   - type: textarea
     id: resolution
-    label: Resolution
-    description: How was it resolved or what is the current mitigation.
+    attributes:
+      label: Resolution
+      description: How was it resolved or what is the current mitigation.
