@@ -1,28 +1,44 @@
-<!-- Please insert a title in the field above -->
+name: Pull Request Review Request
+description: Open a review request for a pull request
+body:
+  - type: textarea
+    id: context
+    label: Context
+    description: What does this PR do? What does it fix?
+    validations:
+      required: true
 
-## Context
-<!-- What does your PR do? What does it fix? -->
+  - type: textarea
+    id: changes
+    label: Changes
+    description: What does this PR touch in terms of code?
+    placeholder: |
+      -
+      -
+      -
+    validations:
+      required: true
 
-## Changes
-<!-- What does your PR touch in terms of code? -->
+  - type: textarea
+    id: impact
+    label: Impact
+    description: What does this PR change? New env var? Anything we should stop doing?
+    placeholder: |
+      -
+      -
+      -
 
-  -
-  -
-  -
+  - type: textarea
+    id: how_to_test
+    label: How to test
+    description: What should we do to test your changes?
+    placeholder: "1. ... -> 2. ... -> 3. ..."
+    validations:
+      required: true
 
-## Impact
-<!-- What does your PR changes? What we should stop doing? New env var? -->
-
-  -
-  -
-  -
-
-## How to test
-<!-- What should we do to test your changes? -->
-
-1. ... -> 2. ... -> 3. ...
-
-## Points of Interest
-<!-- Anything that we should pay attention to -->
-
-  -
+  - type: textarea
+    id: poi
+    label: Points of Interest
+    description: Anything we should pay attention to.
+    placeholder: |
+      -
