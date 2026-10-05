@@ -3,42 +3,47 @@ description: Open a review request for a pull request
 body:
   - type: textarea
     id: context
-    label: Context
-    description: What does this PR do? What does it fix?
+    attributes:
+      label: Context
+      description: What does this PR do? What does it fix?
     validations:
       required: true
 
   - type: textarea
     id: changes
-    label: Changes
-    description: What does this PR touch in terms of code?
-    placeholder: |
-      -
-      -
-      -
+    attributes:
+      label: Changes
+      description: What does this PR touch in terms of code?
+      placeholder: |
+        -
+        -
+        -
     validations:
       required: true
 
   - type: textarea
     id: impact
-    label: Impact
-    description: What does this PR change? New env var? Anything we should stop doing?
-    placeholder: |
-      -
-      -
-      -
+    attributes:
+      label: Impact
+      description: What does this PR change? New env var? Anything we should stop doing?
+      placeholder: |
+        -
+        -
+        -
 
   - type: textarea
     id: how_to_test
-    label: How to test
-    description: What should we do to test your changes?
-    placeholder: "1. ... -> 2. ... -> 3. ..."
+    attributes:
+      label: How to test
+      description: What should we do to test your changes?
+      placeholder: "1. ... -> 2. ... -> 3. ..."
     validations:
       required: true
 
   - type: textarea
     id: poi
-    label: Points of Interest
-    description: Anything we should pay attention to.
-    placeholder: |
-      -
+    attributes:
+      label: Points of Interest
+      description: Anything we should pay attention to.
+      placeholder: |
+        -
